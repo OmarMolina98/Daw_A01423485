@@ -117,11 +117,6 @@ function orden_inverso(){
     
     let num1 = prompt("Dame el numero para cambiar su orden:");
     
-    while(isNaN(num1)){
-        
-        num1 = prompt("Asegurate ");
-    }
-    
     num1 = num1 + "";
     alert(num1.split("").reverse("").join(""));
     
