@@ -71,53 +71,44 @@ function contadores(){
 
 function matriz(){
     
-    const matrix = [10];
+    const matriz = [10];
     var Arre =new Array(10);
 
         for(let i = 0; i<10; i++){
-        
-       		matrix[i] = new Array(10);
+       		matriz[i] = new Array(10);
        		Arre[i]=0;
     	}
 
     	for(let i = 0; i<10; i++){
-        
         	for(let j = 0; j<10; j++){
-            
-            matrix[i][j]=0;
+            matriz[i][j]=0;
         	}
    		 }
 
    		for(let i = 0; i<10; i++){
-        
         	for(let j = 0; j<10; j++){
-            
-            matrix[i][j]=Math.floor(Math.random()*10);
+            matriz[i][j]=Math.floor(Math.random()*10);
         	}
 
    		 }
    		 for(let i = 0; i<10; i++){
-        
         	for(let j = 0; j<10; j++){
-            
-            document.write(matrix[i][j] + "\n");
+            document.write(matriz[i][j] + "\n");
         	}
         	document.write("<br>");
 
    		 }
 
    		 for(let i = 0; i<10; i++){
-        
         	for(let j = 0; j<10; j++){
-            
-            	Arre[i]=Arre[i]+matrix[i][j];
+            	Arre[i]=Arre[i]+matriz[i][j];
         	}
         	
    		 }
 
    		 for(let i=0; i<10;i++){
    		 	Arre[i]/10;
-   		 	document.write("promedio del renglon: \n" + (i+1) + ": " + Arre[i]/10 + "<br>");
+   		 	document.write("promedio del renglon:\n" + (i+1) + ":" + Arre[i]/10 + "<br>");
    		 }
     
 }
