@@ -1,17 +1,23 @@
 
 function sumar(){
-        
+    
     var num1 = Math.floor((Math.random() * 100) + 1);
     var num2 = Math.floor((Math.random() * 100) + 1);
-    document.write("<br/>Primer numero aleatorio"+num1+"<br/>Segundo numero aleatorio"+num2);    
+    document.write("<br/>Primer numero aleatorio" + num1 +"<br/>Segundo numero aleatorio"+num2);    
     alert("\nSuma los dos números\n" +"Este es el primer numero random:" + num1 + "\nEste es el segundo numero random:" + num2);
         
     var sumar=num1+num2;
             
+    let startTimer = new Date();
+    
     var nombre = parseInt(prompt("Dame el resultado de la suma"));
+    
     if(sumar==nombre){
         
-       document.write("</br>El resultado es el correcto");
+       let endTimer = (new Date() - startTimer)/1000;
+       
+       
+        document.write("</br>El resultado es el correcto, el tiempo que te tardaste fue de: " + endTimer);
       
     }else{
          
@@ -162,26 +168,5 @@ function Problema_Personal(){
     objetoUno.miMetodoDos();
     
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
