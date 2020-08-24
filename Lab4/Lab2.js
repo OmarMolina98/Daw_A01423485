@@ -1,9 +1,9 @@
 
-function sumar(){
+function sumar() {
     
     var num1 = Math.floor((Math.random() * 100) + 1);
     var num2 = Math.floor((Math.random() * 100) + 1);
-    document.write("<br/>Primer numero aleatorio" + num1 +"<br/>Segundo numero aleatorio"+num2);    
+    document.write("<br/>Primer numero aleatorio" + num1 + "<br/>Segundo numero aleatorio"+num2);    
     alert("\nSuma los dos números\n" +"Este es el primer numero random:" + num1 + "\nEste es el segundo numero random:" + num2);
         
     var sumar=num1+num2;
@@ -16,10 +16,9 @@ function sumar(){
         
        let endTimer = (new Date() - startTimer)/1000;
        
-       
         document.write("</br>El resultado es el correcto, el tiempo que te tardaste fue de: " + endTimer);
       
-    }else{
+    } else{
          
          document.write("</br>El resultado es el incorrecto:" + nombre);
     }
@@ -28,7 +27,7 @@ function sumar(){
 
 
 
-function cuadrado(){
+function cuadrado() {
     
     document.write("<table border='1px'>");    
     document.write("<tr style=''>");
@@ -75,10 +74,10 @@ function contadores(){
 
 }
 
-function matriz(){
+function matriz() {
     
     const matriz = [10];
-    var Arre =new Array(10);
+    var Arre = new Array(10);
 
         for(let i = 0; i<10; i++){
        		matriz[i] = new Array(10);
@@ -122,51 +121,72 @@ function matriz(){
 function orden_inverso(){
     
     let num1 = prompt("Dame el numero para cambiar su orden:");
-    
     num1 = num1 + "";
     alert(num1.split("").reverse("").join(""));
     
 }
 
-function Problema_Personal(){
-    
-    class miClase{
-        
-        constructor(primero, segundo, name){
-            
-            this.uno = primero; 
-            this.dos = segundo;
-            this.nombre = name;
-   
-        };
-        
-        miMetodoUno(){
-            
 
-            this.uno=edad;
-          
-            return alert(this.uno);
-        };
-        
-        
-        miMetodoDos(parametroUno, parametroDos){
-            
-            var nombre = prompt("Dame tu nombre:");
-            
-            var edad = parseInt(prompt("Dame tu edad:"));
-          
-            alert("El parametro uno es:" + nombre + "\nEl parametro Dos es:" + edad);  
-            
-            
-        };
-    };
+function Problema_personal(){
     
-    var objetoUno = new miClase();
+    let Persona1 = new datos("Omar Molina", '21');
+    alert (Persona1.Persona_1(1));
     
-    
-    
-    objetoUno.miMetodoDos();
-    
+    let Persona2 = new datos("Alberto Matute", '21');
+    alert (Persona2.Persona_2(21));
+
 }
+
+
+function datos( nombre, edad) {
+    
+    this.nombre = nombre;
+    
+    this.edad = edad;
+    
+    this.getNombre = function () {
+        
+        return this.nombre;
+    }
+    
+    this.getEdad = function () {
+        
+        return this.edad;
+    }
+}
+
+
+datos.prototype.Persona_1 = function(info) {
+    
+    this.info = info;
+    
+    this.getInfo = function () {
+        
+        return this.info;
+        
+    }
+    
+    return ("Nombre: " + this.nombre + "\nEdad: " + this.edad + "\nAños viviendo en Querétaro;" + this.info);
+    
+  };
+
+
+datos.prototype.Persona_2 = function(info2) {
+    
+    this.info2 = info2;
+    
+    this.getInfo2 = function(){
+        
+        return this.info2;
+        
+    }
+    
+    return ("Nombre: " + this.nombre + "\nEdad: " + this.edad + "\nAños viviendo en Querétaro;" + this.info2);
+    
+  };
+
+
+
+
 
 
