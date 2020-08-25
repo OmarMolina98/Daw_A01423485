@@ -1,0 +1,122 @@
+<!DOCTYPE HTML>
+<html lang = "es-Mx">
+<head>
+      <title>Orientada a eventos </title>
+      <meta charset="utf-8">
+      <meta name="author" content="Omar Molina">
+      <meta name="description" content="Este es el lab5 de DAW">
+      <link rel="stylesheet" type="text/css" href="Lab5.css">
+</head>
+<body>
+
+ <header>
+    <h1>Laboratorio 5</h1>
+    <br>
+</header>    
+    
+<section>    
+    <h3>Confirmación de contraseña</h3>
+    <form>
+        <label>
+            <strong>Contraseña</strong>
+            <input class="password" type="password">
+        </label>
+        <label>
+            <strong>Confirmar Contraseña</strong>
+            <input class="confirmarPassword" type="password">
+        </label>
+        <button class="boton" type="submit">Registrarse</button>
+    </form>
+</section> 
+    
+<section> 
+   <div id=productos>
+        <h2>Tienda Virtual</h2>
+        <table>
+            
+            <thead>
+				<tr>
+					<th>Consola:</th><th>Precio</th><th>Procesador</th>
+				</tr>
+			</thead>
+            
+            <tr>
+                <th>Xbox One</th><th>$5999</th><th>AMD Jaguar x86-64 a 1,75 GHz (8 núcleos)</th>
+            </tr>
+            <tr>
+                <th>PlayStation4</th><th>$6800</th><th>Procesador personalizado de un chip CPU: AMD 'Jaguar' x86-64, 8 núcleos GPU: motor gráfico AMD de 1,84 TFLOPS basado en Radeon™</th>
+            </tr>
+            
+            <tr>
+                <th>Nintendo Switch</th><th>$13600</th><th>SoC Nvidia Tegra</th>
+            </tr>
+            
+            <td>
+                <select id="xbox">
+                    <option value="0">0</option>
+                    <option value="5999">1</option>
+                    <option value="11998">2</option>
+                </select>
+            </td>
+            <td>
+                <select id="play">
+                    <option value="0">0</option>
+                    <option value="6800">1</option>
+                    <option value="13600">2</option>
+                </select>
+            </td>
+            <td>
+                <select id="switch">
+                    <option value="0">0</option>
+                    <option value="8500">1</option>
+                    <option value="17000">2</option>
+                </select>
+            </td>
+        </table>
+       
+        <br>
+        <input type="button" onclick="Tienda()" value="Comprar">
+        <br>
+        <label id="Virtual"></label>
+        <br>
+
+    </div>  
+</section>
+   
+<section id="Preguntas">
+        <article>
+           <header>
+                <br>
+                   <h4>Preguntas</h4>
+                   <p>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</p>
+                   <p><strong>Para que se reduzca significativamente los errores que llegan al servidor y pueda ver el usuario que tipo de error ha cometido.</strong></p>
+                   <p>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</p>
+                    <p><strong>Se puede hacer desactivando Javascript.        </strong></p>
+                   <p>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</p>
+                   <p><strong> Porque se obtienen respuestas de manera inmediata con el cliente y de igual forma se optimiza el tiempo.  </strong></p>
+            </header>
+        </article>
+    </section>
+    
+<section id="Referencias">
+        <article>
+           <header>
+                <br>
+                <h4><strong>Referencias</strong></h4>
+                <p><strong>Manz, Validaciones HTML5, Recuperado de: https://lenguajehtml.com/html/formularios/validaciones-html5/</strong></p>
+                <p><strong>https://www.w3schools.com/html/</strong></p>
+           </header>
+        </article>
+</section>
+    
+<script src="Lab5.js"></script> 
+    
+<footer>
+        <br>
+        <p><strong>Victor Omar Molina Camarena</strong></p>
+        <p><strong>A01423485</strong></p>
+</footer>    
+    
+    
+</body>
+</html>
