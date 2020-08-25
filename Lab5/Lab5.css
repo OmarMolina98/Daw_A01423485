@@ -79,8 +79,17 @@ h2 {
 	width: 600px;
 }
 
+h5{
+    
+    font-size: 25px;
+    font-family:cursive;
+    color:#3282b8;
+    text-align: left;
+    
+}
+
 table{
-	background-color: white;
+	background-color: #add8e6;
 	border-collapse: collapse;
 	width: 100%;
 }

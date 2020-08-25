@@ -36,42 +36,45 @@
             
             <thead>
 				<tr>
-					<th>Consola:</th><th>Precio</th><th>Procesador</th>
+					<th>Venta</th><th>Consola:</th><th>Precio</th><th>Procesador</th>
+				</tr>
+			</thead>
+            
+            <thead>
+				<tr>
+					 
 				</tr>
 			</thead>
             
             <tr>
-                <th>Xbox One</th><th>$5999</th><th>AMD Jaguar x86-64 a 1,75 GHz (8 núcleos)</th>
+                <td>
+                    <select id="xbox">
+                        <option value="0">Cantidad 0</option>
+                        <option value="5999">Cantidad 1 </option>
+                        <option value="11998">Cantidad 2 </option>
+                    </select>
+                </td><th>Xbox One</th><th>$5999</th><th>AMD Jaguar x86-64 a 1,75 GHz (8 núcleos)</th>
             </tr>
             <tr>
-                <th>PlayStation4</th><th>$6800</th><th>Procesador personalizado de un chip CPU: AMD 'Jaguar' x86-64, 8 núcleos GPU: motor gráfico AMD de 1,84 TFLOPS basado en Radeon™</th>
-            </tr>
-            
-            <tr>
-                <th>Nintendo Switch</th><th>$13600</th><th>SoC Nvidia Tegra</th>
-            </tr>
-            
-            <td>
-                <select id="xbox">
-                    <option value="0">0</option>
-                    <option value="5999">1</option>
-                    <option value="11998">2</option>
-                </select>
-            </td>
-            <td>
+                <td>
                 <select id="play">
-                    <option value="0">0</option>
-                    <option value="6800">1</option>
-                    <option value="13600">2</option>
+                    <option value="0">Cantidad 0</option>
+                    <option value="6800">Cantidad 1 </option>
+                    <option value="13600">Cantidad 2 </option>
                 </select>
-            </td>
-            <td>
+            </td><th>PlayStation4</th><th>$6800</th><th>Procesador personalizado de un chip CPU: AMD 'Jaguar' x86-64, 8 núcleos GPU: motor gráfico AMD de 1,84 TFLOPS basado en Radeon™</th>
+            </tr>
+            
+            <tr>
+                <td>
                 <select id="switch">
-                    <option value="0">0</option>
-                    <option value="8500">1</option>
-                    <option value="17000">2</option>
+                    <option value="0">Cantidad 0</option>
+                    <option value="8500">Cantidad 1 </option>
+                    <option value="17000">Cantidad 2 </option>
                 </select>
-            </td>
+            </td> <th>Nintendo Switch</th><th>$13600</th><th>SoC Nvidia Tegra</th>
+            </tr>
+
         </table>
        
         <br>
@@ -82,6 +85,38 @@
 
     </div>  
 </section>
+    
+<section id="Problema Personal">
+        <article>
+           <header>
+               <h5><p>Problema Personal</p></h5>
+               <p>En este programa te ayudare a tener una cotización adecuada al armar un kit gamer.</p>
+                           
+               <label>Ingresa tu nombre:</label><input type="text"  id="nombre">
+               <br>
+               <br>
+               
+               <label><br>Ingresa la cantidad que dispones para una Computadora Gamer:</label><input type="number" id="PC"><p ></p> 
+               <br>
+               
+               <label><br>Ingresa la cantidad que dispones para unos Audifonos:</label><input type="number" id="Audifonos"><p ></p> 
+               <br>
+               
+               <label><br>Ingresa la cantidad que dispones para una Pantalla:</label><input type="number" id="Pantalla"><p ></p> 
+               <br>
+              
+               <label><br>Ingresa la cantidad que dispones para una Teclado:</label><input type="number" id="tecla"><p ></p> 
+               <br>
+ <!--
+               -->
+               <br>
+               <button onclick="Personal()">Calcular</button>
+               <br>
+               <label id="Personal"></label>
+               <br>
+            </header>
+        </article>
+</section>    
    
 <section id="Preguntas">
         <article>
@@ -91,12 +126,12 @@
                    <p>¿Por qué es una buena práctica usar JavaScript para checar que sean válidos los inputs de las formas antes de enviar los datos al servidor?</p>
                    <p><strong>Para que se reduzca significativamente los errores que llegan al servidor y pueda ver el usuario que tipo de error ha cometido.</strong></p>
                    <p>¿Cómo puedes saltarte la seguridad de validaciones hechas con JavaScript?</p>
-                    <p><strong>Se puede hacer desactivando Javascript.        </strong></p>
+                    <p><strong>Se puede hacer desactivando Javascript.  </strong></p>
                    <p>Si te puedes saltar la seguridad de las validaciones de JavaScript, entonces ¿por qué la primera pregunta dice que es una buena práctica?</p>
-                   <p><strong> Porque se obtienen respuestas de manera inmediata con el cliente y de igual forma se optimiza el tiempo.  </strong></p>
+                   <p><strong> Porque se obtienen respuestas de manera inmediata con el cliente y de igual forma se optimiza el tiempo. </strong></p>
             </header>
         </article>
-    </section>
+</section>
     
 <section id="Referencias">
         <article>
@@ -109,6 +144,7 @@
         </article>
 </section>
     
+ 
 <script src="Lab5.js"></script> 
     
 <footer>
