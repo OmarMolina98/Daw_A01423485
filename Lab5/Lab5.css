@@ -5,6 +5,20 @@ h1 {
     text-align: center;
 }
 
+h6 {
+    font-size: 17px;
+    font-family: cursive;
+    color:#d92027;
+    text-align: left;
+}
+
+h5 {
+    font-size: 27px;
+    font-family: cursive;
+    color:#f6ab6c;
+    text-align: left;
+}
+
 body {
        
     font-family: Open Sans, sans-serif;
@@ -34,7 +48,7 @@ label{
 /* Forma de circulo de los inputs */
 
 input{
-    width: 96%;
+    width: 50%;
     height: 50px;
     padding: 0 20px;
     font-size: 18px;
