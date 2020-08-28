@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang = "es-Mx">
 <head>
-      <title>Orientada a eventos </title>
+      <title>Lab6</title>
       <meta charset="utf-8">
       <meta name="author" content="Omar Molina">
       <meta name="description" content="Este es el lab6 de DAW">
@@ -11,34 +11,36 @@
 
 <header>
     <h1>Laboratorio 6</h1>
-   
-    <br>
-    <br>
-    
+    <br><br>
 </header> 
     <br>
     <br>
+<section3>
+        <div3 id="fondo" onmouseover="changeColor(this)" onmouseout="changeColor(this)" size=100px;>*Eventos diferentes con colores. </div3>
+        <br><br><br>
+        <div4 id="fondo2" onmouseover="showSix();" onmouseout="showSix()">Pasa el cursor por aquí, tengo un mensaje para ti.</div4>
+        <li id="six" style="visibility:hidden;  color: brown; font-size: 30px;">¡Holaaaaa ten un muy buen día!</li>
+        <br><br>
+        <p id="ghost">Hola me llamo "texto" y tengo miedo de aparecer en la pantalla me puedes ayudar a ocultarme pulsando dos veces el botón por favor!</p>
+        <button class="boton_personalizado" type="button" ondblclick="Desaparecer()">Ayúdame</button>    
+        <br>
+        <br>  
+</section3>
     
 <section>
-
-    <div3 onmouseover="changeColor(this)" onmouseout="changeColor(this)">*Eventos diferentes con colores. </div3>
-     <br><br><br>
+    <p1>Acomoda los animales conforme a la cadena alimenticia</p1><br><br>
+    <div class="imagen" id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="imagen2"><img id="drag1 "class="drag1" src="aguila-calva4-800.jpg" draggable="true" ondragstart="drag(event)" width="336" height="250" position=left;></div>
     
-</section>
+    <div class="imagen "id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+    <div class="imagen2"><img id="drag2" src="10-fotos-adorables-de-conejos.jpg" draggable="true" ondragstart="drag(event)" width="336" height="250"></div>
     
-     <div4 onmouseover="showSix();" onmouseout="showSix()">Pasa el cursor por aquí, tengo un mensaje para ti.</div4>
-     <li id="six" style="visibility:hidden; background: #a8df65; ">¡Holaaaaa ten un muy buen día!</li>
-    <br><br>
-    <p id="ghost">Hola me llamo "texto" y tengo miedo de aparecer en la pantalla me puedes ayudar a ocultarme pulsando dos veces el botón por favor!</p>
-    <button class="boton_personalizado" type="button" ondblclick="Desaparecer()">Ayúdame</button>    
-
-    <br>
-    <br>  
+</section>    
     
 <section> 
-   <div id=productos>
-
-        <h2>Tienda Virtual</h2>
+   <div onmouseover="scaleUp(this,'30px')" id=tienda>
+       
+       <p onmouseover="scaleUp(this,'85px')" onmouseout="scaleUp(this,'40px')">Tienda Virtual</p>
               
         <table>
             <thead>
@@ -76,7 +78,6 @@
             </tr>
 
         </table>
-       
         <br>
         <input type="button" onclick="Tienda()" value="Comprar">
         <br>
@@ -87,29 +88,32 @@
 </section> 
 
 <section>
-
+        <br>
         <div>
-                <button class="Bt_ayuda" onclick= "ashuda()">¿Necesitas Ayuda?</button>
+            <button class="Bt_ayuda" onclick= "ashuda()">¿Necesitas Ayuda?</button>
         </div>
-
-
         <div class="ashuda">
-                        
-                <p  id="ayuda"></p>
-                <p  id="correo"></p>
+        <p  id="ayuda"></p>  <p  id="correo"></p>
         </div> 
 
 </section>    
     
-
 <section id="Preguntas">
         <article>
            <header>
                 <br>
                    <h4>Preguntas</h4>
-                       <p>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</p>
-                       <p> ¿Cuáles son los valores estándar para la propiedad visibility?</p>
-                       <p>¿Qué es el zIndex y para qué sirve?</p>
+                       <strong><p>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</p></strong>
+                       <p>Las principales diferencias entre estos valores son:</p>
+                       <p>absolute: Coloca elementos por valores mediante valores de atributos left, top, botto y right.  </p>
+                       <p>static: El valor inicial o el que va por defecto</p>
+                       <p>relative: Mediante este valor se puede posicionar un elemento al flujo de una página.</p>
+                       <strong><p> ¿Cuáles son los valores estándar para la propiedad visibility?</p></strong>
+                       <p>visible: Sirve para hacer visibles o invisibles elementos </p>
+                       <p>hidden: Es un atributo global booleano que indicica si un elemento está o no está.</p>
+                       <p>collapse: Se utiliza para fusionar los bordes</p>
+                       <strong><p>¿Qué es el zIndex y para qué sirve?</p></strong>
+                       <p>Básicamente sirve para ordenar a cierto tipos de elementos haciendo que se superposicionen haciendo que el z-Index siempre este debajo de los demás o sea que un z-index cubra a uno menor en cuestión de elemento.</p>
             </header>
         </article>
 </section>
@@ -119,13 +123,14 @@
            <header>
                 <br>
                 <h4><strong>Referencias</strong></h4>
-              
+                <p>https://developer.mozilla.org/es/docs/Web/CSS/visibility</p>
+                <p>https://developer.mozilla.org/es/docs/Web/CSS/border-collapse</p>
+                <p>https://www.freecodecamp.org/news/whats-the-document-object-model-and-why-you-should-know-how-to-use-it-1a2d0bc5429d/</p>
                
            </header>
         </article>
 </section>
     
- 
 <script src="lab6.js"></script> 
     
 <footer>
@@ -134,7 +139,6 @@
         <p><strong>Victor Omar Molina Camarena</strong></p>
         <p><strong>A01423485</strong></p>
 </footer>    
-    
     
 </body>
 </html>

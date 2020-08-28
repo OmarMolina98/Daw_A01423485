@@ -1,3 +1,5 @@
+
+
 function Tienda(){
     
     let xbox,play,terc,suma,iva=0;
@@ -30,7 +32,6 @@ function Desaparecer() {
 
 }
 
-
 function changeColor(obj) {
     
     if (obj.style.color == 'orange') {
@@ -40,13 +41,48 @@ function changeColor(obj) {
     }
 }
 
-function showSix() {
-            var element = document.getElementById("six");
-             
-            if(element.style.visibility == "hidden"){
-               
-                element.style.visibility = "visible";
-            } else {
-                element.style.visibility = "hidden";
-            }   
+
+setTimeout(Timer,1500);
+
+function Timer(){
+    
+  alert("¡Qué onda espero te guste la página!");
+  
+}
+
+function scaleUp(obj, size) {
+            obj.style.fontSize = size;
         }
+
+function showSix() {
+    
+    var element = document.getElementById("six");
+             
+    if(element.style.visibility == "hidden"){
+               
+     element.style.visibility = "visible";
+     
+    } 
+    else {
+            element.style.visibility = "hidden";
+    }   
+}
+
+
+function allowDrop(ev) {
+  ev.preventDefault();
+}
+
+function drag(ev) {
+  ev.dataTransfer.setData("text", ev.target.id);
+}
+
+function drop(ev) {
+    
+  ev.preventDefault();
+  var data = ev.dataTransfer.getData("text");
+  ev.target.appendChild(document.getElementById(data));
+    
+}
+
+
