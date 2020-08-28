@@ -1,8 +1,12 @@
 
 function Password() {
     
-    let num = false;let size = false;let pass = 1;
-    let caracteres = false;let letra = false;let accept = false;
+    let num = false;
+    let size = false;
+    let pass = 1;
+    let caracteres = false;
+    let letra = false;
+    let accept = false;
     
     let password = document.getElementById("contraseña").value;
     let passConfirm = document.getElementById("contraseña2").value;

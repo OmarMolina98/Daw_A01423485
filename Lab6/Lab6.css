@@ -1,0 +1,109 @@
+
+
+body {
+       
+    font-family: Open Sans, sans-serif;
+    //display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url(memphis-colorful.png);
+}
+
+/* Este es el recuadro blanco*/
+form{
+    
+    width: 455px;
+    background: #fff;
+    box-shadow: 0 5px 21px #d1d1d1;
+    padding: 40px;
+    border-radius: 8px;
+}
+
+label{
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+}
+
+/* Forma de circulo de los inputs */
+
+input{
+    width: 50%;
+    height: 50px;
+    padding: 0 20px;
+    font-size: 18px;
+    border-radius: 50px;
+    border: 0;
+    background-color: #e8eaf6;
+}
+
+strong{
+    
+    margin: 5px;
+    display: block;
+}
+
+button{
+    
+    
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    background: linear-gradient(to left, #444CB8, #f44336);
+    box-shadow: 0 10px 25px #444CB8;
+    border-radius: 100px;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    
+}
+
+h2 {
+    font-size: 45px;
+    font-family:cursive;
+    color:#3282b8;
+    text-align: center;
+}
+
+#productos{
+	margin: 150px auto;
+	width: 600px;
+}
+
+h5{
+    
+    font-size: 25px;
+    font-family:cursive;
+    color:#3282b8;
+    text-align: left;
+    
+}
+
+table{
+	background-color: #add8e6;
+	border-collapse: collapse;
+	width: 100%;
+}
+
+th, td{
+	padding: 35px;
+}
+
+thead{
+	background-color: #246355;
+	border-bottom: solid 5px #0F362D;
+	color: white;
+}
+
+tr:nth-child(even){
+	background-color: #98FB98;
+}
+
+tr:hover td{
+	background-color: #74d2e7;
+	
+}

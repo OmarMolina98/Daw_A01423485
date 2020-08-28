@@ -1,0 +1,140 @@
+<!DOCTYPE HTML>
+<html lang = "es-Mx">
+<head>
+      <title>Orientada a eventos </title>
+      <meta charset="utf-8">
+      <meta name="author" content="Omar Molina">
+      <meta name="description" content="Este es el lab6 de DAW">
+      <link rel="stylesheet" type="text/css" href="lab6.css">
+</head>
+<body>
+
+<header>
+    <h1>Laboratorio 6</h1>
+   
+    <br>
+    <br>
+    
+</header> 
+    <br>
+    <br>
+    
+<section>
+
+    <div3 onmouseover="changeColor(this)" onmouseout="changeColor(this)">*Eventos diferentes con colores. </div3>
+     <br><br><br>
+    
+</section>
+    
+     <div4 onmouseover="showSix();" onmouseout="showSix()">Pasa el cursor por aquí, tengo un mensaje para ti.</div4>
+     <li id="six" style="visibility:hidden; background: #a8df65; ">¡Holaaaaa ten un muy buen día!</li>
+    <br><br>
+    <p id="ghost">Hola me llamo "texto" y tengo miedo de aparecer en la pantalla me puedes ayudar a ocultarme pulsando dos veces el botón por favor!</p>
+    <button class="boton_personalizado" type="button" ondblclick="Desaparecer()">Ayúdame</button>    
+
+    <br>
+    <br>  
+    
+<section> 
+   <div id=productos>
+
+        <h2>Tienda Virtual</h2>
+              
+        <table>
+            <thead>
+				<tr>
+					<th>Venta</th><th>Consola:</th><th>Precio</th><th>Procesador</th>
+				</tr>
+			</thead>            
+            <tr>
+                <td>
+                    <select id="xbox">
+                        <option value="0">Cantidad 0</option>
+                        <option value="5999">Cantidad 1 </option>
+                        <option value="11998">Cantidad 2 </option>
+                    </select>
+                </td><th>Xbox One</th><th>$5999</th><th>AMD Jaguar x86-64 a 1,75 GHz (8 núcleos)</th>
+            </tr>
+            <tr>
+                <td>
+                <select id="play">
+                    <option value="0">Cantidad 0</option>
+                    <option value="6800">Cantidad 1 </option>
+                    <option value="13600">Cantidad 2 </option>
+                </select>
+            </td><th>PlayStation4</th><th>$6800</th><th>Procesador personalizado de un chip CPU: AMD 'Jaguar' x86-64, 8 núcleos GPU: motor gráfico AMD de 1,84 TFLOPS basado en Radeon™</th>
+            </tr>
+            
+            <tr>
+                <td>
+                <select id="switch">
+                    <option value="0">Cantidad 0</option>
+                    <option value="8500">Cantidad 1 </option>
+                    <option value="17000">Cantidad 2 </option>
+                </select>
+            </td> <th>Nintendo Switch</th><th>$8500</th><th>SoC Nvidia Tegra</th>
+            </tr>
+
+        </table>
+       
+        <br>
+        <input type="button" onclick="Tienda()" value="Comprar">
+        <br>
+        <label id="Virtual"></label>
+        <br>
+
+    </div>  
+</section> 
+
+<section>
+
+        <div>
+                <button class="Bt_ayuda" onclick= "ashuda()">¿Necesitas Ayuda?</button>
+        </div>
+
+
+        <div class="ashuda">
+                        
+                <p  id="ayuda"></p>
+                <p  id="correo"></p>
+        </div> 
+
+</section>    
+    
+
+<section id="Preguntas">
+        <article>
+           <header>
+                <br>
+                   <h4>Preguntas</h4>
+                       <p>¿Cuáles son las diferencias entre los posibles valores de la propiedad position?</p>
+                       <p> ¿Cuáles son los valores estándar para la propiedad visibility?</p>
+                       <p>¿Qué es el zIndex y para qué sirve?</p>
+            </header>
+        </article>
+</section>
+    
+<section id="Referencias">
+        <article>
+           <header>
+                <br>
+                <h4><strong>Referencias</strong></h4>
+              
+               
+           </header>
+        </article>
+</section>
+    
+ 
+<script src="lab6.js"></script> 
+    
+<footer>
+        <br>
+        <p><strong>Datos:</strong></p>
+        <p><strong>Victor Omar Molina Camarena</strong></p>
+        <p><strong>A01423485</strong></p>
+</footer>    
+    
+    
+</body>
+</html>
