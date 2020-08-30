@@ -1,5 +1,3 @@
-
-
 function Tienda(){
     
     let xbox,play,terc,suma,iva=0;
