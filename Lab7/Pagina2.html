@@ -1,0 +1,73 @@
+<!doctype html>
+<html class="no-js" lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/foundation.css">
+    <link rel="stylesheet" href="css/app.css">
+    <title class="Hola">Formulario</title>
+      
+  </head>
+<body>
+    
+    <div class="top-bar" id="top">
+      <div class="row">
+        <div class="top-bar-left">
+          <h3>Laboratoio 7(Foundation)</h3>
+        </div>
+        <div class="top-bar-right">
+          <ul class="menu">
+              <li><a class="current" href="index.html">Home</a></li>
+              <li><a href="Pagina2.html">Formulario</a></li>
+              <li><a href="info.html">Contacto</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    
+<section>   
+    
+            <br><br><br>
+            <article>
+            <h1>Formulario</h1>
+            <form>
+                <label >Nombre del Interesado: </label>
+                    <input type="text" id="nombre" placeholder="Nombre">
+                <br><br>
+
+                <label >Fecha de llegada</label>
+                     <input type="date" id="Fecha" placeholder="Fecha ">
+                <br><br>
+
+                <label >Hotel: </label>
+                    <input type="text" id="hotel" placeholder="Hotel">
+                <br><br>
+
+                <label >Cantidad de Personas: </label>
+                    <input type="number" id="personas" placeholder="Personas ">
+                <br><br>
+
+                <label>Carga de Archivos: </label>
+                    <input class="button" type="file" id="file"> 
+                 <br><br>
+                 <button class="success button" type="button" class="btn btn-secondary" onclick="formulario()">Enviar</button>
+                  <input class="alert button" type="reset" value="Borrar información">
+
+                </form>
+                </article>    
+
+</section>   
+    
+    
+    
+    
+    <script src="js/vendor/jquery.js"></script>
+    <script src="js/vendor/what-input.js"></script>
+    <script src="js/vendor/foundation.js"></script>
+    <script src="js/app.js"></script>
+    <script src="lab7.js"></script>
+  </body>
+    
+    
+</html>

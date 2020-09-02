@@ -1,0 +1,92 @@
+header{
+
+    background-color: #f1fcfd;
+    border-color: dimgray;    
+}
+
+#top{
+    
+    width: 100%;
+    background-color: #84a9ac   ;
+    padding: 0;
+    margin: 0;
+}s
+
+p1{
+    
+    text-align: left;
+    color: #594057;
+    font-size: 20px;
+    
+}
+
+body{
+    
+      width: 1700px;
+      margin: 0 auto;
+      background-color: #d7eef2;
+      padding: 0 20px 20px 20px;
+      border: 2.5px ;
+}
+
+div{
+        color: saddlebrown;
+        background-color: #e0e7e9 }
+    
+p{
+   color:#6e4b1f; 
+   font-size:20px;
+   font-family:sans-serif;
+   font-weight:bold;
+   font-style:oblique;
+   line-height:30px;
+   text-transform:capitalize;
+}
+
+body:after { 
+  color: #febe7e;
+  display: flex;
+  position: fixed;
+  top: 10;
+  right: 0;
+  bottom: 0;
+  left: 20;
+  content: "World-Tryp"; 
+  font-size: 40px; 
+}
+
+li{
+    
+    position: relative;
+    display: block;
+    *padding: .4em;
+    margin: .5em 0;
+    background: #c7e78b;
+    color: #444;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;  
+    
+}
+
+h5{
+
+    font-style: italic;
+    color: #7788E1;
+    font-size: 35px;
+  
+}
+
+
+article{
+    
+    background-color:lightgrey;
+    
+}
+
+
+footer{
+    
+    background-color: #d2e4f1;
+    color: #d3bd9a;
+}
