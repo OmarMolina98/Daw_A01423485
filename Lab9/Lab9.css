@@ -1,0 +1,28 @@
+header{
+
+    background-color: #f1fcfd;
+    border-color: dimgray;    
+}
+
+#top{
+    
+    width: 100%;
+    background-color: #84a9ac   ;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    
+      width: 1700px;
+      margin: 0 auto;
+      background-color: #d7eef2;
+      padding: 0 20px 20px 20px;
+      border: 2.5px ;
+}
+
+footer{
+    
+    background-color: #d2e4f1;
+    color: #d3bd9a;
+}
