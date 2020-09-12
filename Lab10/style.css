@@ -1,0 +1,38 @@
+body{
+    
+      width: 1700px;
+      margin: 0 auto;
+      background-color;
+      padding: 0 20px 20px 20px;
+      border: 2.5px ;
+}
+
+section{
+    width: 80vw;
+    position: relative;
+    left: 5vw;
+    padding: 2vw;
+}
+
+article{
+    
+    margin-bottom: 2vh;
+    padding: 2em 2vw 2em 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+
+footer{
+    
+    width: 100%;
+    background-color:beige;
+    color: darkblue;
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+    left: 0;
+}
+
+.error {
+    color: red;
+    font-weight: bolder;
+}

@@ -1,0 +1,31 @@
+body{
+    
+      width: 1700px;
+      margin: 0 auto;
+      background-color:cornsilk;
+}
+
+article{
+    background-color:beige;
+    padding: 2em 2vw 2em 2vw;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.1);
+}
+
+footer{
+    background-color:beige;
+    width: 100%;
+    background-color:beige;
+    color: darkblue;
+    align-items: center;
+    padding: 1em;
+    margin: 0;
+    left: 0;
+}
+
+section{
+    
+    position: relative;
+    left: 5vw;
+    padding: 2vw;
+}
+
