@@ -1,0 +1,22 @@
+<div class="container">
+   
+    <h5>Aquí vas a poder subir tus fotos favoritas</h5>
+    <p class="flow-text" id="user">
+        <h5>Hola: <?php echo $_SESSION["user"]?></h5>
+        <br><br>
+    
+        <p>Selecciona para subir una nueva foto</p>
+        
+        <form method="POST" action="upload.php" enctype="multipart/form-data">
+             
+              <input  type="file" name="fileToUpload" id="fileToUpload">
+              <br><br>
+              <input class="btn green" type="submit" value="Subir" name="submit">
+              
+        </form>
+
+        <br> <br>
+        <a href="fotos.php" class="btn green darken-3">Ver Fotos</a>
+        <br> <br>
+</div>
+  
