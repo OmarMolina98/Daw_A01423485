@@ -7,7 +7,7 @@
 
     foreach($files as $img){
         
-        echo "<img class=\"responsive-img\" width=\"500em\" src=".$img.">";
+        echo "<img class=\"responsive-img\" width=\"250em\" src=".$img.">";
         echo "<br>";
     }
 

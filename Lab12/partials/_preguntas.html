@@ -1,0 +1,17 @@
+<h5>Preguntas</h5>
+<p> ¿Por qué es importante hacer un session_unset() y luego un session_destroy()?  </p>
+<p>Sirve para eliminar una variable o un elemento de un array u objeto y el destroy sirve para destruir toda la información asociada con la sesión actual, no destruye ninguna de las variables globales asociadas con la sesión, ni destruye la cookie de sesión. </p>
+
+<p>¿Cuál es la diferencia entre una variable de sesión y una cookie? </p>
+<p>La principal difrencia es que la variable de session se guarda en el servidor y una cookie se guarda en el navegador, solamente las crea el cliente.</p>
+
+<p> ¿Qué técnicas se utilizan en sitios como facebook para que el usuario no sobreescriba sus fotos en el sistema de archivos cuando sube una foto con el mismo nombre?</p>
+<p>Las técnicas que utilizan es el manejo de colisiones de las tablas de dispersión.</p>
+
+<p>¿Qué es CSRF y cómo puede prevenirse?</p>
+<p>El CSRF o Cross Site Request Forgery es un tipo de ataque que consiste en forzar al usuario a ejecutar peticiones no deseadas de una web en las que han sido autenticados sin su concentimiento. Es un ataque muy delicado pues no solo es posible realizarlo por medio de peticiones GET si no tambien POST. Se puede prevenir por medio de diversas acciones que deben se ejecutadas por el usuario</p>
+<br>
+<h5>Referencias</h5>
+<li>https://www.php.net/manual/es/function.session-destroy.php</li>
+<li>https://www.welivesecurity.com/la-es/2015/04/21/vulnerabilidad-cross-site-request-forgery-csrf/</li>
+
