@@ -1,0 +1,30 @@
+Omar Molina
+
+¿Qué muestra la instrucción sp_help materiales?
+
+Esta instrucción sirve para que se pueda mostrar en las tabla de materiales una descripción, columnas, longitud y tipo de datos.
+
+
+¿Qué efecto tuvo esta instrucción?
+
+Crea toda las tablas con los campos que se especificaron
+
+
+¿Qué utilidad tiene esta manera de ejecutar los comandos de SQL?
+
+La utilidad que se da en esta manera de ejecutar es basicamente que no hay un orden tal cual por lo que no se debe de ejecutar linea por linea, puedes hacer varias cosas 
+al mismo tiempo.
+
+
+¿Qué relación tienen con las tablas de la base de datos? (checa su contenido)
+Tienen los datos de la tabla divididas por coma.
+
+
+
+¿Qué relación tiene el contenido de este archivo (materiales.sql) con el formato en que se encuentran los datos en el archivo materiales.csv?
+La relación es que se encontrarán ordenados los campos de la tabla que se ponga.
+
+
+
+¿Qué sucedió?
+Muestra la tabla de materials por columnas y aparecen con todos los atributos.
