@@ -1,0 +1,31 @@
+¿Qué pasa cuando deseas realizar esta consulta?
+Puedes hacer una consulta sin mayor problema o sea que es una consulta normal.
+
+
+Commit Transction 
+¿Qué pasa cuando deseas realizar esta consulta?
+En el usuario 1, se realiza de forma correcta, pero en la segunda como no tiene el commit.. no se puee permitir ejecutarla.
+
+
+Explica por qué ocurre dicho evento.
+Esto ocurre debido a que el usuario 1, inicia sesión pero no la termina.
+
+
+¿Qué ocurrió y por qué?
+Ocurrio que el registro al inicio, ya que se hizo un rollback así que no procedió a ninguna consulta
+
+
+"Manejando Fallas en una Transacción"
+
+
+¿Para qué sirve el comando @@ERROR revisa la ayuda en línea? 
+Este comando sirve para indicar si hubo algún error, el cual se ejecuta al momento de haber un error diferente a 0 ejecuta un rollback.
+
+
+¿Qué hace la transacción? 
+En la tabla de clientes se insertan nuevos clientes, al igual que una llave primaria que ya existia
+
+
+
+¿Hubo alguna modificación en la tabla? Explica qué pasó y por qué?
+No paso nada, debido a que existía un error por lo que no se guarda ningún tipo de cambio.
