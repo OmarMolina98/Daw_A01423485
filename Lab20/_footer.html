@@ -1,0 +1,65 @@
+<script type="text/javascript">
+          
+            
+        function formSubmit(){
+               
+            $.ajax({
+               
+                type:'POST',
+                url:'insert.php',
+                data:$('#frmBox').serialize(),
+                success:function(response){
+                    
+                    $('#success').html(response);
+                    
+                }
+                 setTimeout(function() {
+                                
+                                $('#success').fadeOut("slow");
+                    }, 3000);
+                
+            });
+            
+            var form=document.getElementById('frmBox').reset();
+            return false;
+            
+  
+        }
+        
+        </script>
+        
+    </body>
+    
+    
+    
+<footer class="page-footer font-small blue-grey lighten-5">
+
+  <div style="background-color: #21d192;">
+    <div class="container">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0">VICTOR OMAR MOLINA CAMARENA</h6>
+        </div>
+      
+
+     
+
+      </div>
+      
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+
+  <div class="footer-copyright text-center text-black-50 py-3">© 2020 Copyright:
+    <a class="dark-grey-text" href="https://mdbootstrap.com/"> MDBootstrap.com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+</html>
